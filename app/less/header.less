@@ -2,7 +2,6 @@
 #header {
     .container{
         display: flex;
-        justify-content: space-between;
 
         #logo {
             margin-top: 23px;
@@ -12,18 +11,28 @@
 }
 
 .nav {
-    margin-top: 25px;
+    margin: 25px 0px 0 60px;
+    flex-grow: 1;
 
     &_list {
         display: flex;
         list-style: none;
 
         a {
+            display: inline-block;
+            margin: 0 20px;
             color: #000;
             text-decoration: none;
-
-            :hover {
+            transition: all 0.3s ease-out;
+            
+            &:hover {
                 color: #0057FF;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
             }
             .nav_link {
                 font-family: @osw;
@@ -39,16 +48,27 @@
     }
 }
 
-.purchase_btn {
-    background: #0057FF;
+.purchase_btn { //тут ніяк не міг задати висоту падінгами
+    display: inline-block;
+    height: 52px;
+    background-color: #0057FF;
     border-radius: 30px;
-    padding: 10.5px 40px;
+    padding: 16px 40px;
+    margin-top: 13px;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 
     text-align: center;
     text-transform: uppercase;
     font-family: @osw;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #fff;
+        color: #0057FF;
+    }
 }

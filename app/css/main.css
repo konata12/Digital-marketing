@@ -12,15 +12,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 #header .container #logo {
   margin-top: 23px;
 }
 .nav {
-  margin-top: 25px;
+  margin: 25px 0px 0 60px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .nav_list {
   display: -webkit-box;
@@ -29,11 +29,22 @@
   list-style: none;
 }
 .nav_list a {
+  display: inline-block;
+  margin: 0 20px;
   color: #000;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-.nav_list a :hover {
+.nav_list a:hover {
   color: #0057FF;
+}
+.nav_list a:first-child {
+  margin-left: 0;
+}
+.nav_list a:last-child {
+  margin-right: 0;
 }
 .nav_list a .nav_link {
   font-family: 'oswald';
@@ -45,14 +56,26 @@
   font-size: 13px;
 }
 .purchase_btn {
-  background: #0057FF;
+  display: inline-block;
+  height: 52px;
+  background-color: #0057FF;
   border-radius: 30px;
-  padding: 10.5px 40px;
+  padding: 16px 40px;
+  margin-top: 13px;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   text-align: center;
   text-transform: uppercase;
   font-family: 'oswald';
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   color: #fff;
+  text-decoration: none;
+}
+.purchase_btn:hover {
+  background-color: #fff;
+  color: #0057FF;
 }

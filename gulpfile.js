@@ -16,21 +16,20 @@ let pngquant = require('imagemin-pngquant');
 let del = require('del');
 let less = require('gulp-less');
 
-// Creating gulp task
+// Creating gulp tasks
 
 // from_preprocessor
 let from_preprocessor = () => {
     return src([
-        `./app/${ preprocessor }/styles.${ preprocessor }`
+        `./app/${ preprocessor }/*.${ preprocessor }`,
+        // !`./app/mixin.less`
     ])
         .pipe(concat('main.css'))
 		.pipe(eval(preprocessor)())
-		.pipe(autoprefixer({
-			grid: true,
-			cascade: true
-		}))
+		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(dest('./app/css'))
 }
+
 
 
 // Creating gulp exports

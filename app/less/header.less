@@ -1,0 +1,54 @@
+@import 'mixins';
+#header {
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        #logo {
+            margin-top: 23px;
+        }
+        
+    }
+}
+
+.nav {
+    margin-top: 25px;
+
+    &_list {
+        display: flex;
+        list-style: none;
+
+        a {
+            color: #000;
+            text-decoration: none;
+
+            :hover {
+                color: #0057FF;
+            }
+            .nav_link {
+                font-family: @osw;
+                font-size: 14px;
+                line-height: 26px;
+                text-transform: uppercase;
+    
+                &:nth-child(3) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.purchase_btn {
+    background: #0057FF;
+    border-radius: 30px;
+    padding: 10.5px 40px;
+    border: none;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: @osw;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}

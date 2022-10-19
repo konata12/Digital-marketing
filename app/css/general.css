@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.btn {
+  display: inline-block;
+  height: 52px;
+  background-color: #0057FF;
+  border-radius: 30px;
+  padding: 16px 40px;
+  margin-top: 13px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'oswald';
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #0057FF;
+}
+.d-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

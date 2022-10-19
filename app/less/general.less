@@ -1,3 +1,6 @@
+// imports
+@import 'mixins';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +9,37 @@
 .container {
     max-width: 1200px;
     margin: auto;
+}
+.btn { //тут ніяк не міг задати висоту падінгами
+    display: inline-block;
+    height: 52px;
+    background-color: #0057FF;
+    border-radius: 30px;
+    padding: 16px 40px;
+    margin-top: 13px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: @osw;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #fff;
+        color: #0057FF;
+    }
+}
+.d-f {
+    display: flex;
+}
+.caption {
+    font-family: @osw;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 1px;
 }

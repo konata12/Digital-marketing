@@ -1,13 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
 #header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,27 +45,60 @@
 .nav_list a .nav_link:nth-child(3) {
   font-size: 13px;
 }
-.purchase_btn {
-  display: inline-block;
-  height: 52px;
-  background-color: #0057FF;
-  border-radius: 30px;
-  padding: 16px 40px;
-  margin-top: 13px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'oswald';
-  font-size: 14px;
-  line-height: 20px;
-  color: #fff;
-  text-decoration: none;
+.section-1 {
+  padding-top: 171px;
+  padding-bottom: 220px;
 }
-.purchase_btn:hover {
-  background-color: #fff;
-  color: #0057FF;
+.section-1 .container {
+  position: relative;
+}
+.section-1 .home_heading {
+  font-family: 'oswald';
+  font-size: 56px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 4px;
+}
+.section-1 .home_main-text {
+  font-family: 'roboto';
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 52px;
+  margin-bottom: 17px;
+}
+.section-1 .home .samantha {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+}
+.section-1 .home .samantha .name {
+  font-family: 'oswald';
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.section-1 .home .samantha .stars img {
+  margin-right: -5px;
+}
+.section-1 .home_btn {
+  background-color: #FFA332;
+  margin-top: 40px;
+}
+.section-1 .home_btn:hover {
+  color: #fff;
+  background-color: #63c77b;
+}
+.section-1 .home_img {
+  position: absolute;
+  top: -119px;
+  right: -161px;
+  z-index: -1;
 }

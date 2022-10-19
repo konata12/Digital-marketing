@@ -22,15 +22,26 @@ let less = require('gulp-less');
 let from_preprocessor = () => {
     return src([
         `./app/${ preprocessor }/*.${ preprocessor }`,
-        // !`./app/mixin.less`
+        `!./app/${ preprocessor }/general.${ preprocessor }`,
+        `!./app/${ preprocessor }/mixins.${ preprocessor }`
     ])
         .pipe(concat('main.css'))
 		.pipe(eval(preprocessor)())
-		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+		.pipe(autoprefixer({ cascade: true }))
 		.pipe(dest('./app/css'))
+}
+
+// general_less
+let general_less = () => {
+    return src(`./app/${ preprocessor }/general.${ preprocessor }`)
+        .pipe(rename('general.css'))
+        .pipe(eval(preprocessor)())
+        .pipe(autoprefixer({ cascade: true }))
+        .pipe(dest('./app/css'))
 }
 
 
 
 // Creating gulp exports
-exports.fromPreprocessor = from_preprocessor
+exports.fromPreprocessor = from_preprocessor;
+exports.generalLess = general_less

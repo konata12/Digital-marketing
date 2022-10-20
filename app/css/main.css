@@ -102,3 +102,157 @@
   right: -161px;
   z-index: -1;
 }
+.section-2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.section-2 .container {
+  position: relative;
+}
+.section-2 .container .blue_text {
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+.section-2 .container .caption {
+  font-size: 48px;
+  margin-bottom: 39px;
+}
+.section-2 .container .text_fill {
+  margin-bottom: 77px;
+}
+.section-2 .container .big_blonde {
+  width: 100%;
+}
+.section-2 .container .bg.grey {
+  top: 320px;
+  left: -20px;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.section-2 .container .bg.orange {
+  top: 620px;
+  right: -20px;
+}
+.section-3 .container .blue_text {
+  color: #000;
+  text-align: center;
+}
+.section-3 .container .about_left {
+  width: 50%;
+  margin-top: 385px;
+}
+.section-3 .container .about_left > .caption {
+  margin-bottom: 48px;
+  text-align: left;
+}
+.section-3 .container .about_left > .text_fill {
+  margin-bottom: 37px;
+  text-align: left;
+  font-size: 15px;
+}
+.section-3 .container .about_left .block {
+  width: 50%;
+  text-align: left;
+  padding-right: 102px;
+}
+.section-3 .container .about_left .block img {
+  margin-bottom: 18px;
+}
+.section-3 .container .about_left .block .caption {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.section-3 .container .about_left .block .text_fill {
+  font-size: 14px;
+  text-align: left;
+}
+.section-3 .container .about_left .block.right {
+  margin-left: -10px;
+}
+.section-3 .container .about_left .btn {
+  margin-top: 30px;
+}
+.section-3 .container .about_right {
+  width: 50%;
+  padding-left: 60px;
+  margin-top: 201px;
+}
+.section-3 .container .about_right .contact_us {
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+          box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+  border-radius: 15px;
+  position: relative;
+}
+.section-3 .container .about_right .contact_us_text {
+  text-align: center;
+  padding: 57px 40px 55px;
+}
+.section-3 .container .about_right .contact_us_text .caption {
+  font-size: 29px;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+.section-3 .container .about_right .contact_us_text .text_fill {
+  margin-top: 26px;
+  margin-bottom: 17px;
+}
+.section-3 .container .about_right .contact_us_text .d-f {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-3 .container .about_right .contact_us_text .d-f .filling {
+  width: 47.39%;
+}
+.section-3 .container .about_right .contact_us_text .filling {
+  background: #F8F8F8;
+  border: 1px solid #E7E7E7;
+  border-radius: 6px;
+  padding: 22.5px 26px;
+  font-family: 'roboto';
+  font-size: 15px;
+}
+.section-3 .container .about_right .contact_us_text .filling:nth-child(4) {
+  width: 100%;
+  margin: 32px 0 32px;
+}
+.section-3 .container .about_right .contact_us_text .filling:nth-child(5) {
+  width: 100%;
+  margin-bottom: 42px;
+}
+.section-3 .container .about_right .contact_us_text .filling:focus {
+  outline: none;
+}
+.section-3 .container .about_right .contact_us_text .filling::-webkit-input-placeholder {
+  font-family: 'roboto';
+  font-size: 15px;
+}
+.section-3 .container .about_right .contact_us_text .filling::-moz-placeholder {
+  font-family: 'roboto';
+  font-size: 15px;
+}
+.section-3 .container .about_right .contact_us_text .filling:-ms-input-placeholder {
+  font-family: 'roboto';
+  font-size: 15px;
+}
+.section-3 .container .about_right .contact_us_text .filling::-ms-input-placeholder {
+  font-family: 'roboto';
+  font-size: 15px;
+}
+.section-3 .container .about_right .contact_us_text .filling::placeholder {
+  font-family: 'roboto';
+  font-size: 15px;
+}
+.section-3 .container .about_right .contact_us .bg.grey {
+  top: 123px;
+  left: -54px;
+}
+.section-3 .container .about_right .contact_us .bg.green {
+  bottom: 98px;
+  right: -60px;
+}

@@ -60,8 +60,159 @@
 }
 
 .section-2 {
+    text-align: center;
+    padding-bottom: 40px;
 
     .container {
-        
+        position: relative;
+
+        .blue_text {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+        .caption {
+            font-size: 48px;
+            margin-bottom: 39px;
+        }
+        .text_fill {
+            margin-bottom: 77px;
+        }
+        .big_blonde {
+            width: 100%;
+        }
+        .bg.grey {
+            top: 320px;
+            left: -20px;
+            transform: translateX(-100%);
+        }
+        .bg.orange {
+            top: 620px;
+            right: -20px;
+        }
+    }
+}
+
+.section-3 {
+
+    .container {
+
+        .blue_text {
+            color: #000;
+            text-align: center;
+        }
+        .about {
+
+            &_left {
+                width: 50%;
+                margin-top: 385px;
+
+                & > .caption {
+                    margin-bottom: 48px;
+
+                    text-align: left;
+                }
+                & > .text_fill {
+                    margin-bottom: 37px;
+
+                    text-align: left;
+                    font-size: 15px;
+                }
+                .block {
+                    width: 50%;
+                    text-align: left;
+                    padding-right: 102px;
+
+                    img {
+                        margin-bottom: 18px;
+                    }
+                    .caption {
+                        font-size: 25px;
+                        line-height: 36px;
+                        letter-spacing: 0;
+
+                        margin-bottom: 16px;
+                    }
+                    .text_fill {
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                }
+                .block.right {
+                    margin-left: -10px;
+                }
+                .btn {
+                    margin-top: 30px;
+                }
+            }
+            &_right {
+                width: 50%;
+                padding-left: 60px;
+                margin-top: 201px;
+
+                .contact_us {
+                    width: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+                    border-radius: 15px;
+                    // overflow: hidden;
+                    position: relative;
+
+                    &_text {
+                        text-align: center;
+                        padding: 57px 40px 55px;
+
+                        .caption {
+                            font-size: 29px;
+                            line-height: 40px;
+                            letter-spacing: 0;
+                        }
+                        .text_fill {
+                            margin-top: 26px;
+                            margin-bottom: 17px;
+                        }
+                        .d-f {
+                            justify-content: space-between;
+
+                            .filling {
+                                width: 47.39%;
+                            }
+                        }
+                        .filling {
+                            background: #F8F8F8;
+                            border: 1px solid #E7E7E7;
+                            border-radius: 6px;
+                            padding: 22.5px 26px;
+
+                            font-family: @rob;
+                            font-size: 15px;
+
+                            &:nth-child(4) {
+                                width: 100%;
+                                margin: 32px 0 32px;
+                            }
+                            &:nth-child(5) {
+                                width: 100%;
+                                margin-bottom: 42px;
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                            &::placeholder {
+                                font-family: @rob;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .bg.grey {
+                        top: 123px;
+                        left: -54px;
+                    }
+                    .bg.green {
+                        bottom: 98px;
+                        right: -60px;
+                    }
+                }
+            }
+        }
     }
 }

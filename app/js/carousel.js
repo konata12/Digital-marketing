@@ -11,3 +11,13 @@ $('.owl-carousel').owlCarousel({
     ],
     dots:true
 })
+
+const nav = document.querySelector('.owl-nav')
+const items = document.querySelectorAll('.item')
+
+nav.addEventListener('mouseover', () => {
+
+})
+
+console.dir(nav)
+console.dir(items)

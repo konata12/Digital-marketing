@@ -15,6 +15,7 @@ $('.owl-carousel').owlCarousel({
 const nav = document.querySelector('.owl-nav')
 const items = document.querySelectorAll('.item')
 
+// change color when nav is hovered over
 nav.addEventListener('mouseover', e => {
     const mouseX = e.clientX
     const mouseY = e.clientY
@@ -30,13 +31,47 @@ nav.addEventListener('mouseover', e => {
             coordinates.right > mouseX &&
             coordinates.top < mouseY && 
             coordinates.bottom > mouseY ) {
+
+            elem.classList.add('mouse_over')
             console.dir( coordinates )
         }
-
-        // console.dir( coordinates.left )
     })
-    // console.dir( document.elementFromPoint(e.clientX, e.clientY) )
 })
 
-console.dir(nav)
-console.dir(items)
+// change color back when nav stopped being hovered over
+nav.addEventListener('mouseout', e => {
+    const mouseX = e.clientX
+    const mouseY = e.clientY
+
+    items.forEach( elem => {
+        const coordinates = elem.getBoundingClientRect()
+
+        if ( coordinates.left < mouseX && 
+            coordinates.right > mouseX &&
+            coordinates.top < mouseY && 
+            coordinates.bottom > mouseY ) {
+
+            elem.classList.remove('mouse_over')
+        }
+    })
+})
+
+// change colors when moving over nav
+nav.addEventListener('mousemove', e => {
+    const mouseX = e.clientX
+    const mouseY = e.clientY
+
+    items.forEach( elem => {
+        const coordinates = elem.getBoundingClientRect()
+
+        if ( coordinates.left < mouseX && 
+            coordinates.right > mouseX &&
+            coordinates.top < mouseY && 
+            coordinates.bottom > mouseY ) {
+
+            elem.classList.add('mouse_over')
+        } else {
+            elem.classList.remove('mouse_over')
+        }
+    })
+})

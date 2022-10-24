@@ -557,6 +557,7 @@
   transition: all 0.3s ease-out;
   text-align: center;
 }
+.section-6 .container #carousel .owl-stage-outer .item.mouse_over,
 .section-6 .container #carousel .owl-stage-outer .item:hover {
   background-color: #f0f0f0;
 }

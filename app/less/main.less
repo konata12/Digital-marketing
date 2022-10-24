@@ -638,8 +638,9 @@
     padding: 99px 0 100px;
     
     .container {
+        position: relative;
 
-        .blue_text {
+        & > .blue_text {
             margin-bottom: 4px;
         }
         .caption {
@@ -659,12 +660,18 @@
                 }
             }
             .small_box {
-                display: flex;
                 text-align: left;
-                padding: 21px;
+                padding: 21px 21px 19px;
                 border: 1px solid #D9DCEC;
                 border-radius: 10px;
 
+                a {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+
+                    text-decoration: none;
+                }
                 &_img {
                     width: 50%;
                     padding-right: 30px;
@@ -698,13 +705,20 @@
                 }
             }
             .big_box {
-                position: relative;
+                // position: relative;
                 width: 50%;
                 border: 1px solid #D9DCEC;
                 border-radius: 10px;
-                padding: 21px;
+                // padding: 21px;
                 margin-left: 8px;
 
+                a {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    padding: 21px;
+                }
                 img {
                     width: 100%;
                 }
@@ -722,9 +736,18 @@
                     }
                     .caption {
                         letter-spacing: 0;
+                        margin-bottom: 0;
                     }
                 }
             }
+        }
+        .green {
+            top: 44px;
+            left: -48px;
+        }
+        .orange {
+            bottom: 0;
+            right: -225px;
         }
     }
 }

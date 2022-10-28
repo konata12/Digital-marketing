@@ -180,6 +180,12 @@
                     // overflow: hidden;
                     position: relative;
 
+                    &_img {
+
+                        img {
+                            width: 100%;
+                        }
+                    }
                     &_text {
                         text-align: center;
                         padding: 57px 40px 55px;
@@ -245,11 +251,13 @@
                     .bg.grey {
                         top: 123px;
                         left: -54px;
+                        z-index: -1;
                     }
 
                     .bg.green {
                         bottom: 98px;
                         right: -60px;
+                        z-index: -1;
                     }
                 }
             }

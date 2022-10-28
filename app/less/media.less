@@ -1,0 +1,337 @@
+// started adaptivity, added paddings to container
+@media (max-width: 1200px) {
+
+    .container {
+        padding: 0 15px;
+    }
+    .section-2 {
+
+        .container {
+
+            .blue_text {
+                font-size: 9px;
+                line-height: 17px;
+            }
+            .caption {
+                padding: 0 20px;
+
+                font-size: 37px;
+                line-height: 39px;
+            }
+            .text_fill {
+                padding: 0 20px;
+                margin-bottom: 30px;
+
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .bg.grey {
+                top: 290px;
+                left: 0px;
+                z-index: -1;
+            }
+            .bg.orange {
+                top: 550px;
+                right: -20px;
+                z-index: -1;
+            }
+        }
+    }
+    .section-4 {
+
+        .container {
+
+            .trust_text {
+
+                .question_list {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// 
+@media (max-width: 1100px) {
+
+    .section-1 {
+        padding: 150px 0 180px;
+
+        .home_img {
+            transform: scale(0.8);
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .section-1 {
+
+        .home {
+            width: 75%;
+        }
+        .home_img {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    .section-2 {
+
+        .container {
+
+            .caption {
+                padding: 0 150px;
+            }
+            .text_fill {
+                padding: 0 150px;
+            }
+            .bg.grey {
+                top: 290px;
+                left: 0px;
+                transform: scale(0.8);
+            }
+            .bg.orange {
+                top: 550px;
+                right: -20px;
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+
+// started adaptivity to header
+@media (max-width: 850px) {
+
+    #header {
+
+        .container {
+
+            .nav {
+                margin-left: 20px;
+                flex-grow: 0;
+                justify-content: center;
+
+                a {
+                    margin: 0 10px;
+                    
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .section-1 {
+        padding: 100px 0 120px;
+    }
+    .section-2 {
+
+        .container {
+
+            .caption {
+                padding: 0 100px;
+            }
+            .text_fill {
+                padding: 0 100px;
+            }
+            .bg.grey {
+                top: 290px;
+                left: 0px;
+                transform: scale(0.65);
+            }
+            .bg.orange {
+                top: 550px;
+                right: -20px;
+                transform: scale(0.65);
+            }
+        }
+    }
+}
+
+// header nav visibility on logo hover
+@media (max-width: 650px) {
+
+    #header {
+
+        .container {
+
+            .nav {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+
+                a {
+                    margin: 0 10px;
+                    
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .section-1 {
+
+        .home {
+            width: 100%;
+        }
+    }
+    .section-2 {
+
+        .container {
+
+            .caption {
+                padding: 0 60px;
+            }
+            .text_fill {
+                padding: 0 60px;
+            }
+            .bg.grey {
+                top: 335px;
+                left: 0px;
+                transform: scale(0.5);
+            }
+            .bg.orange {
+                top: 550px;
+                right: -20px;
+                transform: scale(0.5);
+            }
+        }
+    }
+}
+
+// decreasing text
+@media (max-width: 500px) {
+
+    .btn {
+        height: 40px;
+        padding: 12px 30px;
+
+        font-size: 11px;
+        line-height: 15px;
+    }
+    #header {
+
+        .container {
+            position: relative;
+
+            .nav.hover {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 93px;
+                z-index: 1;
+                margin: 0;
+                outline: 1px solid #E7E7E7;
+                border-radius: 10px;
+                overflow: hidden;
+
+                .nav_list {
+                    display: block;
+
+                    li {
+                        margin: 0;
+                        background-color: rgba(255, 238, 240);
+
+                        &:hover {
+                            background-color: rgb(255, 218, 224);
+                        }
+                        a {
+                            width: 100%;
+                            display: inline-block;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+            .btn {
+                margin-top: 19px;
+            }
+        }
+    }
+    .section-1 {
+
+        .home {
+            
+            &_heading {
+                font-size: 42px;
+                line-height: 49px;
+            }
+            &_main-text {
+                font-size: 12px;
+                line-height: 19px;
+            }
+            .samantha {
+
+                .name {
+                    font-size: 13px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+    .section-2 {
+
+        .container {
+
+            .blue_text {
+                font-size: 9px;
+                line-height: 17px;
+            }
+            .caption {
+                padding: 0 20px;
+
+                font-size: 37px;
+                line-height: 39px;
+            }
+            .text_fill {
+                padding: 0 20px;
+                margin-bottom: 30px;
+
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .bg.grey {
+                // top: 185px;
+                top: 55%;
+                left: 0px;
+                transform: scale(0.25);
+            }
+            .bg.orange {
+                // top: 290px;
+                top: 90%;
+                right: -50px;
+                transform: scale(0.25);
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .section-2 {
+
+        .container {
+
+            .bg.grey {
+                top: 65%;
+                left: 0px;
+                transform: scale(0.25);
+            }
+            .bg.orange {
+                top: 80%;
+                right: -50px;
+                transform: scale(0.25);
+            }
+        }
+    }
+}

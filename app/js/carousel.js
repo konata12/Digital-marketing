@@ -12,11 +12,11 @@ $('.owl-carousel').owlCarousel({
     dots:true
 })
 
-const nav = document.querySelector('.owl-nav')
+const nav_carousel = document.querySelector('.owl-nav')
 const items = document.querySelectorAll('.item')
 
 // change color when nav is hovered over
-nav.addEventListener('mouseover', e => {
+nav_carousel.addEventListener('mouseover', e => {
     const mouseX = e.clientX
     const mouseY = e.clientY
 
@@ -39,7 +39,7 @@ nav.addEventListener('mouseover', e => {
 })
 
 // change color back when nav stopped being hovered over
-nav.addEventListener('mouseout', e => {
+nav_carousel.addEventListener('mouseout', e => {
     const mouseX = e.clientX
     const mouseY = e.clientY
 
@@ -57,7 +57,7 @@ nav.addEventListener('mouseout', e => {
 })
 
 // change colors when moving over nav
-nav.addEventListener('mousemove', e => {
+nav_carousel.addEventListener('mousemove', e => {
     const mouseX = e.clientX
     const mouseY = e.clientY
 

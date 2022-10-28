@@ -1,5 +1,5 @@
 const stat = document.querySelectorAll('.stat')
-console.dir(stat)
+
 stat.forEach( elem => {
     percent = +elem.children[0].children[1].textContent.trim().slice(0, 2)
     progress_bar = elem.children[1].children[0]

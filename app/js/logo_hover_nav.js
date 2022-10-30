@@ -8,7 +8,6 @@ console.dir(window.innerWidth)
 logo.addEventListener('mouseover', e => {
     if (window.innerWidth <= 500) {
         nav_header.classList.add('hover')
-        console.dir(111)
     }
 })
 
@@ -29,7 +28,5 @@ logo.addEventListener('mouseout', e => {
         nav_header.addEventListener('mouseout', function() {
             nav_header.classList.remove('hover')
         })
-
-        console.dir(222)
     }
 })

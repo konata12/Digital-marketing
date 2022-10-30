@@ -9,7 +9,15 @@ $('.owl-carousel').owlCarousel({
         prevIcon,
         nextIcon
     ],
-    dots:true
+    dots:true,
+    0:{
+        items:1,
+        nav:true
+    },
+    600:{
+        items:3,
+        nav:false
+    },
 })
 
 const nav_carousel = document.querySelector('.owl-nav')

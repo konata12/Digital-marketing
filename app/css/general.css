@@ -4,11 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
 textarea {
   resize: none;
+}
+.section {
+  overflow: hidden;
 }
 .container {
   max-width: 1200px;

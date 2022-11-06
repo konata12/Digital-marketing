@@ -101,13 +101,17 @@
         }
 
         .bg.orange {
-            top: 620px;
+            // top: 620px;
+            bottom: 0;
             right: -20px;
+
+            z-index: -1;
         }
     }
 }
 
 .section-3 {
+    padding-bottom: 40px;
 
     .container {
 
@@ -266,7 +270,7 @@
 }
 
 .section-4 {
-    padding-top: 245px;
+    padding-top: 205px;
     padding-bottom: 161px;
 
     .container {
@@ -312,22 +316,61 @@
                     overflow: hidden;
 
                     .question {
-                        padding: 30px 32px 30px 40px;
+                        // padding: 30px 32px 30px 40px;
                         justify-content: space-between;
                         transition: all 0.3s ease-out;
                         z-index: 1;
                         border-radius: 0;
+                        flex-wrap: wrap;
 
                         &:hover {
                             background-color: #f1f1f1;
 
                         }
-
                         p {
                             font-family: @osw;
                             font-size: 16px;
                             line-height: 28px;
                             text-transform: uppercase;
+
+                            margin: 30px 0px 30px 40px;
+
+                        }
+                        .dropdown-toggle {
+                            border: none;
+                            background-color: transparent;
+                            margin: 30px 32px 30px 0px;
+
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        .dropdown-menu {
+
+                            position: inherit !important;
+                            transform: translate(0px, 0px) !important;
+                            width: 100%;
+                            padding: 0;
+                            border: none;
+                            border-radius: 0;
+
+                            font-family: @osw;
+                            text-transform: uppercase;
+
+                            li {
+
+                                &:hover {
+                                    background-color: #f1f1f1;
+
+                                    .dropdown-item {
+                                        color: #0057FF;
+
+                                        &:hover {
+                                            background-color: transparent;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -529,6 +572,16 @@
                         font-size: 20px;
                         line-height: 30px;
                         text-transform: uppercase;
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                            transition: all 0.3s ease-out;
+
+                            &:hover {
+                                color: #0057FF;
+                            }
+                        }
                     }
                     &_position {
                         font-family: @osw;
@@ -780,6 +833,11 @@
                     .small_box_img {
                         display: flex;
                         width: 50%;
+                        padding-right: 30px;
+
+                        img {
+                            width: 100%;
+                        }
                     }
                     .small_box_text {
                         width: 50%;
@@ -816,7 +874,7 @@
 
                     a {
                         display: flex;
-                        padding: 21px;
+                        padding: 21px 21px 21px;
                         width: 100%;
 
                         .big_box_container {
@@ -824,6 +882,12 @@
                             height: 100%;
                             position: relative;
 
+                            .big_box_img {
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
                             .big_box_text {
                                 width: 100%;
                                 position: absolute;
@@ -847,10 +911,12 @@
         .green {
             top: 44px;
             left: -48px;
+            z-index: -1;
         }
         .orange {
-            bottom: 0;
+            bottom: 0px;
             right: -225px;
+            z-index: -1;
         }
     }
 }

@@ -7,9 +7,10 @@
         <title>Digital Marketing</title>
 
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
     </head>
 
     <body>
@@ -19,6 +20,12 @@
                     <a href="#">
                         <img src="img/logo.png" alt="logo" id="logo">
                     </a>
+
+                    <div class="click_nav">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
 
                 <div class="nav">
@@ -70,6 +77,7 @@
         </header>
         
         <main id="main">
+            <!-- Change this, bad adaptive -->
             <section class="section section-1 "id="home">
                 <div class="container">
                     <div class="home">
@@ -135,6 +143,7 @@
                 </div>
             </section>
             
+            <!-- Change this, bad adaptive -->
             <section class="section section-3" id="about">
                 <div class="container">
                     <p class="blue_text">
@@ -244,14 +253,20 @@
                             </p>
 
                             <div class="question_list">
-                                <div class="question d-f">
+                                <div class="question dropdown d-f">
                                     <p>
                                         Do you provide customer support?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="question d-f">
@@ -259,9 +274,15 @@
                                         How much traffic can the hosting handle?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="question d-f">
@@ -269,25 +290,35 @@
                                         Do you have any questions for us?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="question d-f">
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+
                                     <p>
                                         What is your return policy?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <img class="bg" src="img/section-2_grey.png"> -->
                 </div>
             </section>
 
@@ -314,7 +345,7 @@
                                     </p>
 
                                     <p class="stat_text_percent">
-                                        85%
+                                        86%
                                     </p>
                                 </div>
 
@@ -426,7 +457,9 @@
                             </div>
 
                             <p class="item_name">
-                                Martin Eduard
+                                <a href="#">
+                                    Martin Eduard
+                                </a>
                             </p>
 
                             <p class="item_position">
@@ -454,11 +487,13 @@
                             </div>
 
                             <p class="item_name">
-                                Martin Eduard
+                                <a href="#">
+                                    Martin Eduard
+                                </a>
                             </p>
 
                             <p class="item_position">
-                                CEO of Marketing
+                                salesman
                             </p>
 
                             <div class="item_stars d-f">
@@ -482,11 +517,13 @@
                             </div>
 
                             <p class="item_name">
-                                Martin Eduard
+                                <a href="#">
+                                    Martin Eduard
+                                </a>
                             </p>
 
                             <p class="item_position">
-                                CEO of Marketing
+                                sales manager
                             </p>
 
                             <div class="item_stars d-f">
@@ -602,8 +639,6 @@
                         <a href="#" class="btn">
                             Meet the team
                         </a>
-
-                        <!-- <img src="img/big_grey_triangle.jpg"> -->
                     </div>
 
                     <div class="bottom d-f">
@@ -646,7 +681,7 @@
                 </div>
             </section>
 
-            <!-- <section class="section section-8" id="blog">
+            <section class="section section-8" id="blog">
                 <div class="container">
                     <p class="blue_text">
                         from our blog
@@ -732,7 +767,7 @@
                     <img class="bg green" src="img/section-8_green.png">
                     <img class="bg orange" src="img/section-2_orange.png">
                 </div>
-            </section> -->
+            </section>
         </main>
 
         <footer id="footer">
@@ -821,6 +856,7 @@
 
 
         <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
         <script src="js/carousel.js"></script>
         <script src="js/logo_hover_nav.js"></script>

@@ -1,32 +1,52 @@
-const logo = document.querySelector('#logo')
 const nav_header = document.querySelector('.nav')
-console.dir(logo)
-console.dir(nav_header)
-console.dir(window.innerWidth)
+const click_nav = document.querySelector('.click_nav')
+// console.dir(nav_header)
+// console.dir(click_nav)
 
-// add class for nav
-logo.addEventListener('mouseover', e => {
-    if (window.innerWidth <= 500) {
-        nav_header.classList.add('hover')
-    }
+// EVENTS
+
+// add and remove class for nav on three lines click
+click_nav.addEventListener('click', e => {
+
+    nav_header.classList.forEach( elem => {
+        if (elem === 'hover') {
+            nav_header.classList.remove('hover')
+            
+            const lines = [...click_nav.children]
+            lines.forEach( elem => {
+                elem.classList.remove('anim')
+                elem.classList.add('anim_alter')
+            })
+        } else {
+            nav_header.classList.add('hover')
+
+            const lines = [...click_nav.children]
+            lines.forEach( elem => {
+                elem.classList.remove('anim_alter')
+                elem.classList.add('anim')
+            })
+        };
+    })
 })
 
-// remove class from nav
-logo.addEventListener('mouseout', e => {
-    if (window.innerWidth <= 500) {
-        // nav_header.classList.remove('hover')
-        function remove() {
+// remove class for nav on out click
+window.addEventListener('click', e => {
+    const mouseX = e.clientX
+    const mouseY = e.clientY
+    const coordinates = click_nav.getBoundingClientRect()
+
+    if ( coordinates.left < mouseX && 
+        coordinates.right > mouseX &&
+        coordinates.top < mouseY && 
+        coordinates.bottom > mouseY ) {
+            
+        } else {
             nav_header.classList.remove('hover')
+
+            const lines = [...click_nav.children]
+            lines.forEach( elem => {
+                elem.classList.remove('anim')
+                elem.classList.add('anim_alter')
+            })
         }
-        let timerId = setTimeout(remove, 500)
-    
-        nav_header.addEventListener('mouseover', function() {
-            clearTimeout(timerId)
-            nav_header.classList.add('hover')
-        })
-    
-        nav_header.addEventListener('mouseout', function() {
-            nav_header.classList.remove('hover')
-        })
-    }
 })

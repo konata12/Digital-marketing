@@ -43,6 +43,7 @@ let general_less = () => {
 // min_css
 let min_css = () => {
     return src([
+        './app/libs/bootstrap/dist/css/bootstrap.min.css',
         './app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
         './app/css/fonts.css',
         './app/css/general.css',
@@ -60,6 +61,7 @@ let min_css = () => {
 let min_js = () => {
     return src([
         './app/libs/jquery/dist/jquery.min.js',
+        './app/libs/bootstrap/dist/js/bootstrap.bundle.min.js',
         './app/libs/owl.carousel/dist/owl.carousel.min.js',
         './app/js/*'
     ])
@@ -71,16 +73,18 @@ let min_js = () => {
     .pipe(dest('./app/js'))
 }
 
-// delete_dist
-// let del_dist = () => {
-//     await del('dist/')
-// }
+// clean dist
+let clean = async () => {
+	await del('dist/');
+	console.log('Папка dist вилучена');
+}
 
 // build
 let build = () => {
 	return src([
 		'app/css/final.min.css',
 		'app/js/final.min.js',
+        'app/img/**',
         'app/fonts/**',
 		'app/*.html',
 	], {base: 'app'})
@@ -91,4 +95,4 @@ let build = () => {
 // Creating gulp exports
 exports.fromPreprocessor = from_preprocessor;
 exports.generalLess = general_less;
-exports.build = series(min_css, min_js, build)
+exports.build = series(clean, min_css, min_js, build)

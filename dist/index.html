@@ -6,10 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Digital Marketing</title>
 
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/final.min.css">
     </head>
 
     <body>
@@ -19,6 +16,12 @@
                     <a href="#">
                         <img src="img/logo.png" alt="logo" id="logo">
                     </a>
+
+                    <div class="click_nav">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
 
                 <div class="nav">
@@ -70,7 +73,6 @@
         </header>
         
         <main id="main">
-            <!-- Change this, bad adaptive -->
             <section class="section section-1 "id="home">
                 <div class="container">
                     <div class="home">
@@ -136,7 +138,6 @@
                 </div>
             </section>
             
-            <!-- Change this, bad adaptive -->
             <section class="section section-3" id="about">
                 <div class="container">
                     <p class="blue_text">
@@ -246,14 +247,20 @@
                             </p>
 
                             <div class="question_list">
-                                <div class="question d-f">
+                                <div class="question dropdown d-f">
                                     <p>
                                         Do you provide customer support?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="question d-f">
@@ -261,9 +268,15 @@
                                         How much traffic can the hosting handle?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="question d-f">
@@ -271,25 +284,35 @@
                                         Do you have any questions for us?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="question d-f">
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+
                                     <p>
                                         What is your return policy?
                                     </p>
 
-                                    <a href="#">
+                                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="img/plus.png" alt="">
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <img class="bg" src="img/section-2_grey.png"> -->
                 </div>
             </section>
 
@@ -714,7 +737,7 @@
                         <div class="section-8_right">
                             <div class="big_box">
                                 <a href="#">
-                                    <div class="big_box_container">
+                                    <!-- <div class="big_box_container"> -->
                                         <div class="big_box_img">
                                             <img src="img/section-8_marketing.jpg" alt="marketing">
                                         </div>
@@ -729,7 +752,7 @@
                                                 Like In 100 Years?
                                             </p>
                                         </div>
-                                    </div>
+                                    <!-- </div> -->
                                 </a>
                             </div>
                         </div>
@@ -826,11 +849,6 @@
         </footer>
 
 
-        <script src="libs/jquery/dist/jquery.min.js"></script>
-        <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
-        <script src="js/carousel.js"></script>
-        <script src="js/logo_hover_nav.js"></script>
-        <script src="js/progres_bar.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="js/final.min.js"></script>
     </body>
 </html>

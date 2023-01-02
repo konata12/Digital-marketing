@@ -63,7 +63,8 @@ let min_js = () => {
         './app/libs/jquery/dist/jquery.min.js',
         './app/libs/bootstrap/dist/js/bootstrap.bundle.min.js',
         './app/libs/owl.carousel/dist/owl.carousel.min.js',
-        './app/js/*'
+        './app/js/*',
+        '!./app/js/final.min.js'
     ])
     .pipe(concat('final.js'))
     .pipe(uglify())
